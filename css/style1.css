@@ -1,0 +1,116 @@
+html, body {
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: linear-gradient(-45deg, #171717, #0c0c0c, #171717, #0c0c0c);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+section{
+    position: relative;
+    height: 480px;
+}
+
+section div{
+    position: relative;
+    margin-top: 25%;
+}
+
+section h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.btn-shine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    color: white;
+    background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 35px;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+
+@-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 290px;
+    }
+    100% {
+      background-position: 290px;
+    }
+}
+@-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 290px;
+    }
+    100% {
+      background-position: 290px;
+    }
+}
+
+@-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 290px;
+    }
+    100% {
+      background-position: 290px;
+    }
+}
+@keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 290px;
+    }
+    100% {
+      background-position: 290px;
+    }
+}
+  
