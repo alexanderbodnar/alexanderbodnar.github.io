@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Bodnar</title>
+    <title>Alexander Bodnár</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="growl-notification/dark-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js" integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA==" crossorigin="anonymous"></script>
@@ -19,13 +19,10 @@
 <body>
 
     <!-------------CURSOR-------------->
-
     <div class="cursor"></div>
-
 
     <!---------------TSPARTICLES BACKGROUND----------------->
     <div class="tsparticle-class" id="tsparticles"></div>
-
 
 
     <!--FIRST SECTION-->
@@ -75,91 +72,92 @@
             
     </section>
    
-        <section id="Projects" class="container reveal">
-            <div class="mainProjects">
-                <h1>Projects</h1>
-                <div class="Projects">
-                    <h2 id="projectheader">Stickman Samurai (Unity)</h2>
-                </div>
-                <div class="image-container">
-                    <img src="images/hra.png" alt="Stickman Samurai" width="320" height="200" class="image">
-                    <div class="middle">
-                      <div class="text1">
-                        <a href="./stickman_samurai.html"class="removeunderline">Show more</a></div>
-                    </div>
-                  </div>
+    <section id="Projects" class="container reveal">
+        <div class="mainProjects">
+            <h1>Projects</h1>
+            <div class="Projects">
+                <h2 id="projectheader">Stickman Samurai (Unity)</h2>
             </div>
-        </section>
-        <!--https://github.com/z4cH3r/Discord-Webhook-Form-->
-        <section id="Contact" class="container reveal">
-            <div class="mainContact">
-                <h1>Contact</h1>
-                <div class="Contact">
-                    <p class="text">I'm interested in freelance opportunities. <br> If you have a request or a question, feel free to use the form.</p>
+            <div class="image-container">
+                <img src="images/hra.png" alt="Stickman Samurai" width="320" height="200" class="image">
+                <div class="middle">
+                  <div class="text1">
+                    <a href="./stickman_samurai.html"class="removeunderline">Show more</a></div>
                 </div>
-                <form action="https://formspree.io/f/mleapanw" method="POST" id="my-form" class="form">
-                    <input class="zoom" type="text" name="name" placeholder="Enter Name" required>
-                    <input class="zoom" type="email" name="_replyto" placeholder="Enter Email">
-                    <br>
-                    <input class="zoom" type="text" name="subject" placeholder="Subject" id="subject" required >
-                    <br>
-                    <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="Your Message" required></textarea>
-                    <br>
-                    <input type="submit" value="Submit" id="submitButton">
-                    <div id="status"></div>
-                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!--https://github.com/z4cH3r/Discord-Webhook-Form-->
+    <section id="Contact" class="container reveal">
+        <div class="mainContact">
+            <h1>Contact</h1>
+            <div class="Contact">
+                <p class="text">I'm interested in freelance opportunities. <br> If you have a request or a question, feel free to use the form.</p>
+            </div>
+            <form action="https://formspree.io/f/mleapanw" method="POST" id="my-form" class="form">
+                <input class="zoom" type="text" name="name" placeholder="Enter Name" required>
+                <input class="zoom" type="email" name="_replyto" placeholder="Enter Email">
+                <br>
+                <input class="zoom" type="text" name="subject" placeholder="Subject" id="subject" required >
+                <br>
+                <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="Your Message" required></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submitButton">
+                <div id="status"></div>
+            </form>
+            
+
+            <!-- ----------NEW FORM WITH MYSQL INSERTING (NOT SENDING EMAILS DUE TO NOT HAVING WEBMAIL)
+                <form action="./webform.php" method="POST">
+                <input class="zoom" type="text" name="name" placeholder="Enter Name" required>
+                <input class="zoom" type="email" name="email" placeholder="Enter Email">
+                <br>
+                <input class="zoom" type="text" name="subject" placeholder="Subject" id="subject" required >
+                <br>
+                <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="Your Message" required></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submitButton">
+                <div id="status"></div>
+            </form>
+            -->
+
+
+            <!------------OLD WORKING WEBFORM SENDING MAIL AND DISCORD MSG ---------------
                 
+             <form action="https://formspree.io/f/mleapanw" method="POST" id="my-form">
+                <input class="zoom" type="text" name="name" placeholder="Enter Name" required>
+                <input class="zoom" type="email" name="_replyto" placeholder="Enter Email">
+                <br>
+                <input class="zoom" type="text" name="subject" placeholder="Subject" id="subject" required >
+                <br>
+                <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="Your Message" required></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submitButton">
+                <div id="status"></div>
+            </form>
+            -->
+        </div>
+    </section>
 
-                <!-- ----------NEW FORM WITH MYSQL INSERTING (NOT SENDING EMAILS DUE TO NOT HAVING WEBMAIL)
-                    <form action="./webform.php" method="POST">
-                    <input class="zoom" type="text" name="name" placeholder="Enter Name" required>
-                    <input class="zoom" type="email" name="email" placeholder="Enter Email">
-                    <br>
-                    <input class="zoom" type="text" name="subject" placeholder="Subject" id="subject" required >
-                    <br>
-                    <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="Your Message" required></textarea>
-                    <br>
-                    <input type="submit" value="Submit" id="submitButton">
-                    <div id="status"></div>
-                </form>
-                -->
-
-
-                <!------------OLD WORKING WEBFORM SENDING MAIL AND DISCORD MSG ---------------
-                    
-                 <form action="https://formspree.io/f/mleapanw" method="POST" id="my-form">
-                    <input class="zoom" type="text" name="name" placeholder="Enter Name" required>
-                    <input class="zoom" type="email" name="_replyto" placeholder="Enter Email">
-                    <br>
-                    <input class="zoom" type="text" name="subject" placeholder="Subject" id="subject" required >
-                    <br>
-                    <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="Your Message" required></textarea>
-                    <br>
-                    <input type="submit" value="Submit" id="submitButton">
-                    <div id="status"></div>
-                </form>
-                -->
-            </div>
-        </section>
-
-        <section id="Socials" class="container reveal">
-            <div class="mainSocials">
-                <h1>Socials</h1>
-                <picture class="Socials">
-                    <a href="https://www.instagram.com/_alexander_bodnar/">
-                        <img class="instagram" src="images/instagram.png" alt="instagram" style="width:43px;">
-                    </a>
-                    <a href="https://www.facebook.com/alexanderbodnarr/">
-                        <img src="images/fb.png" alt="facebook" style="width:50px;" class="facebook" id="facebook">
-                    </a>
-                    <a href="https://github.com/alexanderbodnar">
-                        <img src="images/github.png" alt="github" style="width:60px;" class="github" id="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/alexander-bodnarr/">
-                        <img src="images/linkedin.png" alt="linkedin" style="width:45px;" class="linkedin" id="linkedin">
-                    </a>
-                </picture>
-            </div>
+    <section id="Socials" class="container reveal">
+        <div class="mainSocials">
+            <h1>Socials</h1>
+            <picture class="Socials">
+                <a href="https://www.instagram.com/_alexander_bodnar/">
+                    <img class="instagram" src="images/instagram.png" alt="instagram" style="width:43px;">
+                </a>
+                <a href="https://www.facebook.com/alexanderbodnarr/">
+                    <img src="images/fb.png" alt="facebook" style="width:50px;" class="facebook" id="facebook">
+                </a>
+                <a href="https://github.com/alexanderbodnar">
+                    <img src="images/github.png" alt="github" style="width:60px;" class="github" id="github">
+                </a>
+                <a href="https://www.linkedin.com/in/alexander-bodnarr/">
+                    <img src="images/linkedin.png" alt="linkedin" style="width:45px;" class="linkedin" id="linkedin">
+                </a>
+            </picture>
+        </div>
     </section>
     
     <footer>
@@ -194,10 +192,6 @@
           requestAnimationFrame(update);
         };
         requestAnimationFrame(update);
-      </script>
-    
-
-      
-    
+      </script>    
 </body>
 </html>
